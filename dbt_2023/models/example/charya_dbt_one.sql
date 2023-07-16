@@ -12,7 +12,7 @@
 with source_data as (
 
    SELECT *
-from dev.people 
+from dev.persons 
 
 
 )

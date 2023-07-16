@@ -5,7 +5,7 @@ models:
   - name: my_first_dbt_model
     description: "A starter dbt model"
     columns:
-      - name: id
+      - name: index
         description: "The primary key for this table"
         tests:
           - unique
@@ -13,6 +13,14 @@ models:
 
   - name: my_second_dbt_model
     description: "A starter dbt model"
+    columns:
+      - name: index
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: charya_dbt_one
+    description: "A charya dbt model"
     columns:
       - name: id
         description: "The primary key for this table"
